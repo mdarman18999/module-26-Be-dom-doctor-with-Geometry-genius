@@ -127,8 +127,16 @@
                     <div class="card-body">
                       <h2 class="card-title flex justify-center">pentagon</h2>
                       <p>Area(A) = 0.5 X P X b </p>
+                      <div class="flex justify-center gap-4">
+                        <input class="w-24 text-2xl rounded-sm" id="p" placeholder="--" type="text">
+                        <span>cm</span>
+                        <input class="w-24 text-2xl rounded-sm" id="b" placeholder="--" type="text">
+                      </div>
+                      <div>
+                        <p class="text-2xl"> = <span id="gon">0</span> gon foll</p>
+                      </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Buy Now</button>
+                        <button onclick="pantagon()" class="btn btn-primary w-full">Buy Now</button>
                       </div>
                     </div>
                   </div>
@@ -142,9 +150,17 @@
                     </figure>
                     <div class="card-body">
                       <h2 class="card-title flex justify-center">Ellipse</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <p>Area = 0.5 * p * b</p>
+                      <div class="flex gap-4">
+                        <input class="w-24 text-2xl rounded-sm" placeholder="peri" type="text" name="" id="Pentagon-Perimeter">
+                        <span></span>
+                        <input class="w-24 text-2xl rounded-sm" placeholder="apo" type="text" name="" id="pentagon-apotherm">
+                      </div>
+                      <div>
+                        <p>Area: <span id="pentagon-area">0</span></p>
+                      </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="calculatePentagonArea()" class="w-full btn btn-primary">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -161,5 +177,8 @@
     <script src="scripts/Rectangle-area.js"></script>
     <script src="scripts/parallelogram.js"></script>
     <script src="scripts/Rhombus.js"></script>
+    <script src="scripts/pentagon.js"></script>
+    <script src="scripts/pentagon-area.js
+    "></script>
 </body>
 </html>
